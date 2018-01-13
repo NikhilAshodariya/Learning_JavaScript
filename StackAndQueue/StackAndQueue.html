@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Combined Stack and Queue</title>
+
+  <style media="screen">
+    #title {
+      text-align: center;
+      color: Red;
+      font-style: italic;
+      font-size: 2em;
+    }
+
+    .outerDiv {
+      border: 0.05em;
+      border-style: solid;
+      border-radius: 1em;
+    }
+
+    .options {
+      list-style-type: none;
+    }
+
+    ul.options li {
+      display: inline-block;
+      background-color: lightblue;
+      height: 3em;
+      width: 5em;
+      text-align: center;
+      line-height: 3em;
+    }
+
+    div.outerDiv input[name="stackAndQueue"] {
+      display: inline-block;
+      background-color: lightblue;
+      text-align: center;
+      line-height: 3em;
+      position: relative;
+      left: 2em;
+    }
+
+    div.mainElements textarea {
+      resize: none;
+    }
+
+    div.mainElements {
+      text-align: center;
+
+    }
+
+    div.mainElements div.dataStructureOptions {
+      float: left;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="stack.js"></script>
+  <script type="text/javascript" src="queue.js"></script>
+  <script type="text/javascript" src="./stackAndQueue.js"></script>
+  <div class="container">
+    <h1 id="title">Welcome to the Stack And Queue</h1>
+
+    <div class="outerDiv">
+      <div>
+        <!-- <ul class="options">
+          <li>Stack</li>
+          <li>Queue</li>
+        </ul> -->
+        <input type="radio" name="stackAndQueue" id="stackRadio" value="stack" checked>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Stack
+        <input type="radio" name="stackAndQueue" id="queueRadio" value="queue">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Queue
+      </div>
+      <hr>
+      <div class="mainElements">
+        <div class="dataStructureOptions">
+          <input type="radio" name="stackOptions" id="stack1Radio" value="0" checked> <span id="stack1"> Stack 1 </span><br>
+          <input type="radio" name="stackOptions" id="stack2Radio" value="1"> <span id="stack2"> Stack 2 </span>
+        </div>
+        <textarea rows="20" id="stackTextArea" cols="50" style="resize:none" disabled></textarea>
+        <br>
+        <button type="button" id="pushButton" name="button">Push</button>
+        <input type="text" placeholder="User Input" id="userInput">
+        <button type="button" id="popButton" name="button">Pop</button>
+        <br>
+        <br>
+        <span id="poppedValue"></span>
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+</body>
+
+</html>
